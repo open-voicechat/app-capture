@@ -4,4 +4,20 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2-screen-capture-kit = "^0.3.0"
+objc2-foundation = "^0.3.0"
+objc2-core-graphics = "^0.3.0"
+objc2-core-media = "^0.3.0"
+objc2-core-video = "^0.3.0"
+objc2-core-audio = "^0.3.0"
+objc2-core-audio-types = "^0.3.0"
+objc2 = "^0.6.0"
+block2 = "^0.6.0"
+dispatch2 = "^0.2.0"
+
 [dependencies]
+bytemuck = "1.21.0"
+bytes = "1.10.0"
+hound = "3.5.1"
+tokio = { version = "1.43.0", features = ["full"] }
